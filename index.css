@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Soluk mavi arka plan */
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    flex-direction: column;
+    background-color: #00acc1;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    align-items: flex-end;
+  }
+  
+  .logo img {
+    max-width: 150px;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background: white;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-mobile {
+    display: none;
+    flex-direction: column;
+    background-color: #007c91;
+    padding: 1rem;
+  }
+  
+  .nav-mobile.active {
+    display: flex;
+  }
+  
+  .nav-mobile a {
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #00acc1;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+  }
+  
+  /* Products Section */
+  .products {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .product-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  /* Testimonial Section */
+  .testimonials {
+    padding: 50px 20px;
+    background-color: #f0f8ff;
+    text-align: center;
+  }
+  
+  .testimonial-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .testimonial-card {
+    background-color: #007c91;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+  }
+  
+  .testimonial-card p {
+    font-style: italic;
+  }
+  
+  .testimonial-card p:first-child {
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #00acc1;
+    color: white;
+    padding: 30px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .footer-column h3 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    background-color: #007c91;
+    padding: 10px;
+    text-align: center;
+  }
+  

@@ -1,0 +1,235 @@
+/* Genel Stil */
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #e0f7fa;
+    color: #004d40;
+  }
+  
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #00acc1;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    align-items: flex-end; /* Sağa hizalama */
+  }
+  
+  /* Logo */
+  .logo img {
+    max-width: 150px;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background: white;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0 0;
+    padding: 0;
+    justify-content: flex-end; /* Menü öğelerini sağa hizalar */
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Mobile Navigation */
+  .nav-mobile {
+    display: none;
+    flex-direction: column;
+    background-color: #007c91;
+    padding: 1rem;
+  }
+  
+  .nav-mobile.active {
+    display: flex;
+  }
+  
+  .nav-mobile a {
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  /* Hakkımızda Başlığı */
+  .hakkimizda-container .title {
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    color: #006064;
+  }
+  
+  /* Grid ve Kartlar */
+  .products {
+    display: grid;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  .product-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .product-info {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .product-info h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .product-info .price {
+    font-size: 0.9rem;
+    color: #007c91;
+    margin-bottom: 0.8rem;
+  }
+  
+  .ekle-btn {
+    background-color: #00acc1;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  .ekle-btn:hover {
+    background-color: #007c91;
+  }
+  
+  /* Pagination */
+  .pagination {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .pagination a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0.6rem 1rem;
+    background: #ffffff;
+    border: 1px solid #00acc1;
+    border-radius: 6px;
+    color: #007c91;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .pagination a:hover {
+    background: #b2ebf2;
+  }
+  
+  .pagination a.active {
+    background: #00acc1;
+    color: white;
+    pointer-events: none;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #006064;
+    color: white;
+    padding: 2rem 1rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .footer-column h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li a,
+  .footer-column a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+/* Responsive Grid */
+@media (max-width: 600px) {
+    .products {
+      grid-template-columns: 1fr; /* Telefon - 1 sütun */
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    nav ul {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 992px) {
+    .products {
+      grid-template-columns: repeat(2, 1fr); /* Tablet - 2 sütun */
+    }
+  }
+  
+  @media (min-width: 993px) and (max-width: 1199px) {
+    .products {
+      grid-template-columns: repeat(3, 1fr); /* PC - 3 sütun */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .products {
+      grid-template-columns: repeat(3, 1fr); /* PC - 3 sütun */
+    }
+  }
+  
