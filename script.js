@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
           <img src="${student.img}" alt="Profil">
           <div class="product-info">
             <h3>${student.name}</h3>
-            <p class="price">${student.year}</p>
             <a class="ekle-btn" href="${student.link}" target="_blank">See Portfolio</a>
           </div>
         `;
