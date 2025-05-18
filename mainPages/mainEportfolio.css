@@ -1,4 +1,24 @@
-/* Fakülte Seçimi */
+ .title-container {
+    text-align: center;
+    margin: 50px 0;
+    background-color: #60c6d4;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+  }
+
+  .title-container .title{
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgb(2, 32, 54);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+/* Faculty Selection*/
 .faculty-selection {
     padding: 50px 20px;
     background-color: #f0f8ff;
@@ -27,12 +47,16 @@
   }
   
   .faculty-card {
-    background-color: white;
-    border: 2px solid #00acc1;
-    border-radius: 10px;
-    padding: 30px 20px;
-    box-shadow: 0 4px 10px rgba(0, 172, 193, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 30px 20px;
+  background-color: white;
+  border: 2px solid #00acc1;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 172, 193, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .faculty-card:hover {
