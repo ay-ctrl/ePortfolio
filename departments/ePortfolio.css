@@ -1,24 +1,29 @@
 
 /* Top Title */
 .title-container {
-  text-align: center;
-  margin: 50px 0;
-  background-color: #60c6d4;
-  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0px;
+  margin: 50px 0;
 }
 
-.title-container .title{
-  text-decoration: none;
+.title-container .title {
   font-size: 2rem;
-  color:#007c91;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  color: #007bff;
+  position: relative;
+  display: inline-block;
   text-align: center;
 }
+
+.title-container .title::after {
+  content: "";
+  display: block;
+  margin: 10px auto 0 auto;
+  width: 800px; /* Daha uzun çizgi */
+  height: 1.5px;
+  background-color: #007bff;
+}
+
   
 /* Student ePortfolios */
 .student-list {
@@ -29,7 +34,7 @@
   
 .student-list h1 {
   font-size: 2.5rem;
-  color: #007c91;
+  color: #007bff;
   margin-bottom: 10px;
 }
 
@@ -50,7 +55,7 @@
 
 .student-card {
   background-color: white;
-  border: 2px solid #00acc1;
+  border: 2px solid #1da3e2;
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 172, 193, 0.2);
@@ -71,7 +76,7 @@
 
 .student-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 172, 193, 0.4);
+  box-shadow: 0 6px 15px #1da3e2;
 }
 
 .student-card h3 {
@@ -87,7 +92,7 @@
 }
 
 .student-card .btn {
-  background-color: #00acc1;
+  background-color: #5abeed;
   width: auto;
   color: white;
   padding: 10px 20px;
@@ -99,7 +104,7 @@
 }
 
 .student-card .btn:hover {
-  background-color: #007c91;
+  background-color: #1da3e2;
 }
   
 /* Pagination */

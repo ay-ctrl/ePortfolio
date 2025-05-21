@@ -1,0 +1,109 @@
+/* === ABOUT HERO BÖLÜMÜ === */
+.about-hero {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url('../pictures/banner.jpg'); /* Arka plan görselini ayarla */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.about-overlay {
+  background-color: rgba(255, 255, 255, 0.4); /* Daha yumuşak overlay */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.about-box {
+  background-color: white;
+  padding: 2rem;
+  margin-left: 6%;
+  max-width: 600px;
+  border: 2px solid #007bff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.about-box h1 {
+  font-size: 1.7rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.about-box p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* === CONTRIBUTORS SECTION === */
+.contributors-section {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.contributors-section h2 {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 2rem;
+}
+
+.contributors-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contributor-card {
+  background-color: white;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.contributor-card:hover {
+  transform: translateY(-5px);
+}
+
+.contributor-img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.contributor-card h3 {
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.contributor-card p {
+  margin: 0.3rem 0;
+  color: #333;
+}
+
+.contributor-card a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contributor-card ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  margin-top: 1rem;
+  text-align: left;
+  color: #555;
+  font-size: 0.95rem;
+}
