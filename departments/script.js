@@ -22,11 +22,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const script = document.createElement("script");
     script.src = `./database/${faculty}/${section}DB.js`; 
     script.onload = () => {
-      if (typeof students !== "undefined" && Array.isArray(students)) {
+      if (typeof students !== "undefined" && Array.isArray(students) && students.length > 0) {
         initPagination(students);
       } else {
-        studentList.innerHTML = "<p>No data found.</p>";
+        studentList.innerHTML = "<p>Currently, there is not any portfolio for this department.</p>";
       }
+      if (typeof departmentName !== "undefined") {
+        title.innerText = departmentName;
+      }
+    };
+
+    script.onerror = () => {
+      studentList.innerHTML = "<p>Currently, there is not any portfolio for this department.</p>";
       if (typeof departmentName !== "undefined") {
         title.innerText = departmentName;
       }
@@ -36,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Pagination start
   function initPagination(data) {
-    const itemsPerPage = 20;
+    const itemsPerPage = 10;
     let currentPage = 1;
     const totalPages = Math.ceil(data.length / itemsPerPage);
 

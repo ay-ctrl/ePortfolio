@@ -123,9 +123,9 @@ flex-wrap: wrap;
   margin: 0 5px;
   padding: 0.6rem 1rem;
   background: #ffffff;
-  border: 1px solid #00acc1;
+  border: 1px solid #007bff;
   border-radius: 6px;
-  color: #007c91;
+  color: #007bff;
   font-weight: 500;
   text-decoration: none;
   transition: background 0.3s;
@@ -136,7 +136,7 @@ flex-wrap: wrap;
 }
 
 .pagination a.active {
-  background: #00acc1;
+  background: #007bff;
   color: white;
   pointer-events: none;
 }
