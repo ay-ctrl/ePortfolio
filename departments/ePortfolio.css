@@ -19,12 +19,18 @@
   content: "";
   display: block;
   margin: 10px auto 0 auto;
-  width: 800px; /* Daha uzun çizgi */
+  width: 95%; /* Sabit px yerine yüzde kullandık */
+  max-width: 800px; /* Maksimum genişlik sınırı */
   height: 1.5px;
   background-color: #007bff;
 }
 
-  
+@media (max-width: 768px) {
+  .title-container .title::after {
+    width: 80%;  /* Mobilde çizgi daha kısa */
+  }
+}
+ 
 /* Student ePortfolios */
 .student-list {
     padding: 50px 20px;
@@ -77,12 +83,6 @@
 .student-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px #1da3e2;
-}
-
-.student-card h3 {
-  font-size: 1.5rem;
-  color: #007c91;
-  margin-bottom: 15px;
 }
 
 .student-card p {
@@ -143,18 +143,18 @@ flex-wrap: wrap;
 
 /* Responsive Grid */
 @media (max-width: 600px) {
-    .student-list {
-      grid-template-columns: 1fr; /* Telefon - 1 sütun */
-    }
-  
-    .hamburger {
-      display: flex;
-    }
-  
-    nav ul {
-      display: none;
-    }
+  .student-list {
+    grid-template-columns: 1fr; /* Telefon - 1 sütun */
   }
+
+  .hamburger {
+    display: flex;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
   
 /* Responsive Grid */
 @media (max-width: 600px) {
