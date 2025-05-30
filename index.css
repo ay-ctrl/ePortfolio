@@ -26,6 +26,16 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Mobil için medya sorgusu */
+@media (max-width: 768px) {
+  .hero-box {
+    max-width: 90%; /* genişliği ekranın %90’ı yap */
+    margin-left: auto;  /* otomatik kenar boşlukları */
+    margin-right: auto;
+    padding: 1.5rem; /* biraz daha az padding */
+  }
+}
+
 .hero-box h1 {
   font-size: 1.8rem;
   color: #007bff;

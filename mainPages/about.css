@@ -25,6 +25,16 @@
   max-width: 600px;
 }
 
+/* Mobil için medya sorgusu */
+@media (max-width: 768px) {
+  .about-box {
+    max-width: 90%;       /* Genişlik ekranın %90'ı olsun */
+    margin-left: auto;    /* Otomatik kenar boşlukları */
+    margin-right: auto;
+    padding: 1.5rem;      /* Padding biraz küçültülebilir */
+  }
+}
+
 .about-box h1 {
   font-size: 1.7rem;
   color: #007bff;
