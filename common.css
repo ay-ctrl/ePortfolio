@@ -60,10 +60,64 @@ nav ul li a:hover {
   color: #007bff;
 }
 
-/* Hamburger ve mobil menüyü gizle (masaüstü için) */
-.hamburger,
+/* Mobil menü başlangıçta gizli */
 .nav-mobile {
   display: none;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: max-content;
+  height: max-content;
+  padding-top: 1rem;
+  z-index: 999;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #ddd;
+}
+
+.nav-mobile.active {
+  display: flex;
+}
+
+.nav-mobile a {
+  display: block;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  color: #333;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.nav-mobile a:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+  transition: all 0.3s ease; /* Geçiş efekti */
+}
+
+/* Hamburger sadece mobilde görünsün */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; /* sola hizalan */
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  nav ul {
+    display: none;
+  }
 }
 
 /* ===== FOOTER ===== */
