@@ -1,4 +1,4 @@
-const departmentName = "Management Information";
+const departmentName = "Management Information Systems";
 const path = "../../pictures/";
 const students = [
   {

@@ -2,7 +2,7 @@ const departmentName = "Computer Engineering";
 const path = "../../pictures/";
 const students = [
   {
-    name: "Murat Kaynar",
+    name: "Mehmet Furkan Erdem",
     img: `${path}computer/muratKaynar.png`,
     link: "https://20comp1013.wixsite.com/e-portfolio-1"
   },
